@@ -1,0 +1,8 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI PDF Editor Pro</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><b>AI PDF <span>EDITOR PRO</span></b><input id="file" type="file" accept="application/pdf"><button id="open">Open PDF</button><button id="download" disabled>Download Edited PDF</button><label>Zoom <input id="zoom" type="range" min=".5" max="2" step=".1" value="1"></label></header>
+<main><aside><h3>EDIT</h3><button data-tool="text">✏️ Text</button><button data-tool="highlight">🖍 Highlight</button><button data-tool="underline">＿ Underline</button><button data-tool="strikeout">̶ Strikeout</button><button data-tool="rect">▭ Rectangle</button><button data-tool="watermark">💧 Watermark</button><hr><h3>TOOLS</h3><button id="extract">📄 Extract Text</button><button id="search">🔎 Search & Replace</button><button id="merge">📚 Merge PDFs</button><button id="ai">🤖 AI Assistant</button><button id="ocr">🔍 OCR</button><p id="status">Ready</p></aside>
+<section id="pages"></section><aside class="right"><h3>AI Assistant</h3><textarea id="prompt" placeholder="Ask about your PDF..."></textarea><button id="ask">Ask AI</button><pre id="result"></pre></aside></main>
+<script type="module" src="/app.js"></script></body></html>
